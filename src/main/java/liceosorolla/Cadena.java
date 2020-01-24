@@ -1,10 +1,9 @@
 package main.java.liceosorolla;
 
-public class String {
-
+public class Cadena {
+	
 	public static void main(java.lang.String[] args) {
-		// TODO Auto-generated method stub
-
+		String cadena="";
 	}
 
 }
