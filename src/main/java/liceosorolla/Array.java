@@ -1,5 +1,7 @@
 package main.java.liceosorolla;
 
+import java.util.Arrays;
+
 public class Array {
 	
 	public static int calculaMximo( int[] letras)  throws Exception {
@@ -14,6 +16,17 @@ public class Array {
 		
 		return maximo;
 	}
+	public static double mediana(int[]array) {
+		double mediana=0;
+		Arrays.sort(array);
+		int mitad=array.length/2;
+		if(array.length%2!=0) {
+			mediana=array[mitad];
+		}else {
+			mediana=(double)(array[mitad-1]+array[mitad])/2;
+		}
+		return mediana;
+	}
 	
 	public static void main(String[] args) throws Exception {
 		int maximo=0;
@@ -21,6 +34,8 @@ public class Array {
 		
 		maximo = calculaMximo(letras);
 		System.out.println("El numero mas alto es "+maximo);
+		double mediana=mediana(letras);
+		System.out.println("La mediana es "+mediana);
 	}
 
 }
