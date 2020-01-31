@@ -7,6 +7,7 @@ public class Numero {
 		int factorial=factorial(numero);
 		System.out.println("El factorial de "+9+" es "+factorial);
 	}
+	
 	public static int factorial(int numero) {
 		int contador=1;
 		int factorial=1;
