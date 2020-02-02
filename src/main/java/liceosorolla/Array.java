@@ -36,6 +36,24 @@ public class Array {
 		System.out.println("El numero mas alto es "+maximo);
 		double mediana=mediana(letras);
 		System.out.println("La mediana es "+mediana);
+		int minimo=minimo(letras);
+		System.out.println("El mínimo sera: "+minimo);
+		
 	}
-
+	public static int minimo(int[]array) {
+		int min=0;
+		 
+		min=array[0];
+ 
+		for(int i = 1; i < array.length; i++)
+		{
+			if(min>array[i])
+			{
+				min=array[i];
+			}
+			}
+		return min;
+	}
 }
+
+
