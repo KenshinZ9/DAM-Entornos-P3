@@ -42,9 +42,7 @@ public class Array {
 	}
 	public static int minimo(int[]array) {
 		int min=0;
-		 
 		min=array[0];
- 
 		for(int i = 1; i < array.length; i++)
 		{
 			if(min>array[i])
